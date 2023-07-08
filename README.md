@@ -1,2 +1,3 @@
 # Analog-Clock
-Using html , css , javaScript
+##### Analog Clock with digital view Using html , css , javaScript. 
+

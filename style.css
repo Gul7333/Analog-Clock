@@ -1,0 +1,81 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.main {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  /* background: yellow; */
+  background: rgba(240, 240, 240);
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid;
+  box-shadow: 2px 2px 10px;
+}
+.main span {
+  position: absolute;
+  transform: rotate(calc(29.6deg * var(--bg)));
+  inset: 5px;
+}
+.main span b {
+  position: absolute;
+  transform: rotate(calc(-29.6deg * var(--bg)));
+  /* inset: 12px; */
+}
+.main::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: grey;
+  z-index: 3;
+}
+.hand {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  /* transform: rotate(77deg); */
+}
+.hand i {
+  position: absolute;
+  width: 4px;
+  height: 40px;
+  background: grey;
+  border-radius: 5px;
+}
+.hour i {
+  widows: 50px;
+}
+.minute i {
+  height: 60px;
+}
+.second i {
+  height: 80px;
+  width: 2px;
+}
+.container {
+  margin-top: 20px;
+  width: 200px;
+  height: 40px;
+  background: grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 8px;
+  gap: 5px;
+}
+.container div {
+  color: yellow;
+  font-size: 29px;
+  font-weight: 600;
+}

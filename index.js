@@ -32,4 +32,4 @@ const time = () => {
   sc.innerText = sec;
 };
 time();
-setInterval(time, 10);
+setInterval(time, 100);
